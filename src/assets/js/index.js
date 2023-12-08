@@ -7,7 +7,7 @@ function scrollToTop() {
 }
 
 // Función que se ejecuta cuando se desplaza la página
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction();
 };
 
@@ -24,3 +24,28 @@ function scrollFunction() {
 // Asignar la función scrollToTop al hacer clic en el botón de regreso al inicio
 document.querySelector('.go-top-btn').addEventListener('click', scrollToTop);
 
+// Función para alternar la visibilidad del menú en pantallas pequeñas
+function toggleMenu() {
+    var menuIcon = document.querySelector('.menu-icon');
+    var mobileMenu = document.querySelector('.nav-list');
+    menuIcon.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const mobileMenu = document.querySelector(".nav-list");
+
+    menuIcon.addEventListener("click", function () {
+        this.classList.toggle("active");
+        mobileMenu.classList.toggle("show");
+    });
+
+    // Cerrar el menú al hacer clic en un enlace del menú móvil
+    mobileMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            menuIcon.classList.remove("active");
+            mobileMenu.classList.remove("show");
+        });
+    });
+});
