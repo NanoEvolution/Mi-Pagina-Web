@@ -3,10 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoTech</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favico.jpg"/>
+    <meta name="description" content="Página web de Daniel Cobo, estudiante.">
+    <meta name="keywords" content="Daniel Cobo, estudiante, experiencia, contacto">
+    <meta name="author" content="Daniel Cobo">
+    <title>Daniel Cobo - Página Principal</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
+    <link rel="stylesheet" href="./assets/css/index.css">
+
 </head>
-<body>
-    <h1>Bienvenido a mi página web de Daniel Cobo</h1>
-</body>
-</html>
+    <body> 
+        <nav>
+            <div class="logo" onclick="scrollToTop()">
+                <img src="./assets/img/NOmbrelogo.png" alt="Logo">
+                
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    
+        <header>
+            <!-- Contenido del header, incluyendo tu imagen de fondo y superposición -->
+            <div class="header-overlay">
+                <div class="header-content">
+                    <h1>Daniel Cobo</h1>
+                    <h2>Estudiante y apasionado por la informática</h2>
+                    <a href="#sobre-mi" class="cta-button">¡Conóceme más!</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="inicio" class="section">
+                <div class="section-content">
+                    <h1>Inicio</h1>
+                    <p>Texto de ejemplo para la sección de inicio.</p>
+                </div>
+            </section>
+    
+            <section id="sobre-mi" class="section">
+                <div class="section-content">
+                    <h1>Sobre mí</h1>
+                    <p>Texto de ejemplo para la sección sobre mí.</p>
+                </div>
+            </section>
+    
+            <section id="experiencia" class="section">
+                <div class="section-content">
+                    <h1>Experiencia</h1>
+                    <p>Texto de ejemplo para la sección de experiencia.</p>
+                </div>
+            </section>
+    
+            <section id="contacto" class="section">
+                <div class="section-content">
+                    <h1>Contacto</h1>
+                    <p>Texto de ejemplo para la sección de contacto.</p>
+                </div>
+            </section>
+    
+        </main>
+
+        <div class="go-top-btn" onclick="scrollToTop()">
+            <div class="arrow-up"></div>
+        </div>
+        
+        <footer>
+            <!-- Contenido del pie de página -->
+        </footer>
+        <!-- Agregamos scripts JavaScript si es necesario -->
+    <script src="/src/assets/js/index.js"></script>
+    </body>
+    
+    </html>
+    
+    

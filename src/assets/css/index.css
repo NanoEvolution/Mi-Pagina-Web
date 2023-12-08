@@ -1,0 +1,215 @@
+/* Reset de estilos y estilos generales */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a2e; /* Cambiamos el color de fondo a un azul oscuro */
+    color: #fff;
+}
+
+/* Header con imagen de fondo y superposición */
+header {
+    position: relative;
+    height: 100vh; /* Cambiamos a 100% de la altura de la ventana */
+    background-image: url('../img/fondoheader.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centramos el contenido verticalmente */
+    padding: 20px 50px; /* Ajustamos el padding del header */
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 1;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    margin-right: auto; /* Mueve el logo a la izquierda */
+}
+
+
+nav .logo img {
+    max-height: 80px;
+    width: auto;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Ajuste del margen derecho */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 6em;
+}
+
+.header-content h2 {
+    font-size: 2em;
+}
+
+main {
+    width: 99%;
+    margin: 20px auto 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section,
+footer {
+    padding: 20px;
+}
+
+.section {
+    background: linear-gradient(to right, #34495e, #596a7b);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h2 {
+    font-size: 1.8em;
+    color: #95a5a6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #d8d7d7;
+}
+
+footer {
+    text-align: center;
+    background-color: #1a252f;
+    color: #fff;
+    /* Quitamos la posición fija y añadimos margen top */
+    margin-top: 20px;
+}
+
+.go-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #12486b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.go-top-btn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.go-top-btn:hover {
+    background-color: #0e2f46;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #fff;
+}
