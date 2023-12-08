@@ -50,6 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-import { inject } from '@vercel/analytics';
- 
-inject();
