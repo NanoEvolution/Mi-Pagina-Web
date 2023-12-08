@@ -23,3 +23,4 @@ function scrollFunction() {
 
 // Asignar la función scrollToTop al hacer clic en el botón de regreso al inicio
 document.querySelector('.go-top-btn').addEventListener('click', scrollToTop);
+

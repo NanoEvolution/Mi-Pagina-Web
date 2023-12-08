@@ -33,11 +33,6 @@ header {
 }
 
 nav {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    z-index: 1;
-    width: 100%; /* Ocupa todo el ancho disponible */
     display: flex;
     align-items: center;
     max-width: 95%;
@@ -52,7 +47,7 @@ nav .logo {
     align-items: center;
     cursor: pointer;
     color: #fff;
-    margin-right: auto; /* Mueve el logo a la izquierda */
+    margin-right: 20px; /* Añade un margen al lado derecho del logo */
 }
 
 
@@ -65,7 +60,7 @@ nav .logo img {
 nav ul {
     list-style: none;
     display: flex;
-    margin-right: 20px; /* Ajuste del margen derecho */
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
 nav ul li {
@@ -182,6 +177,17 @@ footer {
     margin-top: 20px;
 }
 
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 .go-top-btn {
     position: fixed;
     bottom: 20px;
@@ -213,3 +219,4 @@ footer {
     border-right: 10px solid transparent;
     border-bottom: 15px solid #fff;
 }
+
